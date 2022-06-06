@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.mylo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mylo__block {
+  position: relative;
+}
+
+.mylo__image {
+  width: 200px;
+  position: absolute;
+  top: -200px;
+  right: 0;
+  z-index: -1;
+}
+
+.mylo__content {
+  width: 400px;
+  padding: 15px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  position: relative;
+  z-index: 100;
+}
+
+.mylo__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.mylo__desc {
+  margin: 0;
+  font-size: 16px;
+}

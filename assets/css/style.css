@@ -16,6 +16,19 @@ body {
   --text-decoration-color: #ff9a00;
 }
 
+.easterEgg {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+}
+
+.easterEgg__image {
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
@@ -184,6 +197,7 @@ body {
   color: var(--secondary-text-color);
   text-align: justify;
 }
+
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
