@@ -2,8 +2,18 @@ const bulka = document.getElementById('bulka');
 const cucumber = document.getElementById('cucumber');
 const gameScreen = document.getElementById('game');
 const endGameScreen = document.getElementById('endGameScreen');
+const bulkaSong = document.getElementById('bulkaSong');
 const jumpKeyName = 'Space';
 const jumpClassName = 'jump';
+
+const init = () => {
+    bulkaSong.play();
+
+    bulkaSong.addEventListener('ended', function () {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
 
 const jump = () => {
     if (bulka.classList !== jumpClassName) {
@@ -26,3 +36,5 @@ const isAlive = setInterval(() => {
 document.addEventListener('keydown', ({ code }) => {
     if (code === jumpKeyName) jump();
 });
+
+init();
