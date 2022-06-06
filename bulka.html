@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulka The Cat</title>
+    <link rel="stylesheet" href="./assets/css/bulka.css" />
+  </head>
+  <body>
+    <div id="game" class="game">
+      <div id="bulka"></div>
+      <div id="cucumber"></div>
+    </div>
+    <div id="endGameScreen" class="endGameScreen">
+      <h1>GAME OVER 😥</h1>
+      <img src="./assets/images/gameOver.gif" alt="Game Over Cat" />
+      <div>
+        <button onclick="window.location.replace('./index.html')">
+          ⬅️ GO TO HOME PAGE
+        </button>
+        <button onclick="window.location.reload()">🔥 RESTART</button>
+      </div>
+    </div>
+    <script src="./scripts/bulka.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.game {
+  width: 1000px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+
+.gameOver {
+  display: none;
+}
+
+.endGameScreen {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.endGameScreen h1 {
+  margin-bottom: 0;
+}
+
+.endGameScreen img {
+  width: 150px;
+}
+
+.endGameScreen button {
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+
+.endGameScreen button:hover {
+  background-color: #065858;
+  transform: translateY(-1px);
+}
+
+.endGameScreen.active {
+  display: flex;
+}
+
+#bulka {
+  width: 65px;
+  height: 50px;
+  background-image: url(../images/cat.gif);
+  background-size: 65px 50px;
+
+  position: relative;
+  top: 150px;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 50px;
+  }
+  80% {
+    top: 130px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+#cucumber {
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+  background-image: url(../images/cucumber.gif);
+  background-size: 40px 60px;
+  animation: block 2s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
